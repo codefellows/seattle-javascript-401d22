@@ -3,8 +3,7 @@
 
 ## Learning Objectives
 * Students will be able to create npm scripts for automating command line tasks
-* Students will be able to control function context by using `call`, `apply`, and `bind`
-* Students will be able to handle thrown errors through the use of `try` and `catch`
+* Students will be able to control function context by using `call` and `apply`
 * Students will be able to interpret the different types of errors in Javascript
 
 ## Resources

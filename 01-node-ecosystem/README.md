@@ -2,7 +2,6 @@
 =====================================
 
 ## Learning Objectives
-* Students will be able to setup a NodeJS Package using npm
 * Students will be able to create commonjs modules
 * Students will be able to to create unit tests for synchronous Javascript code
 * Students will be able to use to test driven development methodologies

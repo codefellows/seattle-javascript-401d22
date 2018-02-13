@@ -78,14 +78,7 @@ NodeJS made the decision to have all asynchronous events be handled using error 
 Having a consistent callback interface has also made it possible for libraries to be written that assist Javascript developers in handling complex async code!
 
 ### Defining an Error First Callback
-* a callback is simply a function that is passed as an argument to another function
-* "error first" callbacks have the function signature `(err, result) => {}`
-  * the first parameter is reserved for an error
-    * the value will be `null` or `undefined` if there is no error
-  * the second callback is reserved for any successful response data
-    * the value will be `null` or `undefined` if there is no data
-    * not every NodeJS method passes data into the callback
-    * in methods that do not resolve data, success is defined as a lack of an error
+A callback is simply a function that is passed as an argument to another function. "Error first" callbacks have the function signature `(err, result) => {}`. The first parameter is reserved for an error and the value will be `null` or `undefined` if there is no error. The second callback is reserved for any successful response data and the value will be `null` or `undefined` if there is no data. Not every NodeJS method passes data into the callback. In methods that do not resolve data, success is defined as a lack of an error.
 
 ### File System I/O
 The NodeJS `fs` module gives NodeJS programmer's the ability to perform file system operations. The `fs` module has the ability to Create, Read, Update, and Delete files using many different methods. Most methods on the `fs` module have synchronous and asynchronous implementations. Synchronous methods end in _Sync_, like `fs.readFileSync`, and asynchronous method's lack the word _Sync_ in their names, like `fs.readFile`. This naming pattern is true across all of the built-in NodeJS modules. Synchronous methods block Javascript from executing further code until they finish. This can be a huge drawback, therefor synchronous methods are rarely used in web server development.

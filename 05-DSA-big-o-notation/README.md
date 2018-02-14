@@ -4,7 +4,6 @@
 ## Learning Objectives
 * Students will be able to determine and describe the runtime complexity of an algorithm
 * Students will be able to identify and explain the qualities of imperative and functional code
-* Students will be able to implement a functional array-like list with a series of associated methods
 
 ## Resources
 * read [simple wiki big o]

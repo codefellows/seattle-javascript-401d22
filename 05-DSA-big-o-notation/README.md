@@ -40,10 +40,7 @@ In order to understand functional programing, you must understand what a side-ef
   * functions may contain more arguments
 
 ## Imperative vs Functional
-* Imperative code is hard to read because you have to figure out what is happening on each line. Loops are a great example of this as they are generally harder to read the more complex that they get.
-
-## Factory Functions
-A factory function is a pure function that acts like a constructor but without the new keyword. You can almost think of this as a single object builder, not a constructor that requires instantiation.
+Imperative code is hard to read because you have to figure out what is happening on each line. Loops are a great example of this as they are generally harder to read the more complex that they get.
 
 [simple wiki big o]: https://simple.wikipedia.org/wiki/Big_O_notation
 [hacker rank big o video]: https://www.youtube.com/watch?v=v4cd1O4zkGw

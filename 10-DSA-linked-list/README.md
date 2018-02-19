@@ -13,7 +13,7 @@
 ![linked-list](https://s3-us-west-2.amazonaws.com/slugbyte-assets/linked-list.svg)
 
 ### Singly Linked List
-Singly linked lists contain a series of nodes where each node contains a `value` and a `next` property. The `next` property points to the next node in a line of interconnected nodes. The beginning of a linked list is often referred to as the *head*, whereas the end of the list is often referred to as the *tail*.  The *tail* can easily be identified as it's `next` property will hold a value of `null`, simply because there are no more nodes in the list. Standard operations that can be performed on a singly linked list includes:
+Singly linked lists contain a series of nodes where each node contains a `value` and a `next` property. The `next` property points to the next node in a line of interconnected nodes. The beginning of a linked list is often referred to as the *head*, whereas the end of the list is often referred to as the *tail*.  The *tail* can easily be identified as it's `next` property will hold a value of `null`, simply because there are no more nodes in the list. Standard operations that can be performed on a singly linked list include:
   * insertion (ie: `append` and `prepend` methods)
   * deletion (ie: `remove` method)
   * traversal (ie: `find` method)

@@ -81,3 +81,127 @@ O(1) a[i]      direct read operation
 O(1) a[i] = 42 direct write operation
 O(N) insert at index because of shifting
 O(N) remove at index because of shifting
+let o1  = {value: 1, next: null};
+let o77 = {value: 7, next: o1};
+let o33 = {value: 3, next: o77};
+let o7 = {value: 7, next: o33};
+let o3 = {value: 3, next: o7};
+
+# Specification vs Implementation
+Specification: what it should do
+Implementation: how it actually does it
+
+             List
+              |
+        ------------
+        |           |
+    ArrayList     LinkedList
+
+## Specification of List Methods
+
+```
+.isEmpty()
+.size()
+.get(index)
+.prepend(value)
+.append(value)
+.setAtIndex(index, value)
+.removeAtIndex(index)
+```
+
+It's possible to create two different implementations of one
+specification. Notice how our ArrayList and the LinkedList could
+both support all the methods in the List specification, but
+implement them completely differently under the hood.
+
+Specifications allow us to define how to interact with data without
+worrying about the underlying implementation.
+
+# LinkedList Practice Manipulations
+
+```
+// prepend a new node to front of list
+node = new ListNode(-12)
+node.next = list
+list = node
+```
+
+
+```
+list -> 0 -> 1 -> 2 -> 3 -> 4
+list -> 0 -> 1 -> 3 -> 4
+
+let n1 = list.next;
+let n2 = list.next.next;
+n1.next = n2.next;
+```
+
+```
+list -> 4 -> 5 -> 6
+list -> 6 -> 5 -> 4
+
+n6 = list.next.next
+n5 = list.next
+n4 = list
+n6.next = n5
+n5.next = n4
+list = n6
+
+n4 = list
+n5 = list.next
+n6 = list.next.next
+n4.next = null
+n5.next = n4
+n6.next = n5
+list = n6
+```
+
+```
+// assume you will use "xx = new ListNode(1)"
+list -> 0 -> 2
+list -> 0 -> 1 -> 2
+
+let newNode = new ListNode(1)
+newNode.next = list.next;
+list.next = newNode;
+```
+
+```
+list -> 1 -> 3 -> 2
+list -> 1 -> 2 -> 3
+
+// point the two to the three
+list.next.next = list.next;
+
+// point the one to the two
+list.next = list.next.next;
+
+// point the three to null
+list.next.next = null
+```
+
+## Circular References (aka cycles, loops)
+```
+list -> 88
+list -> 88 -> 88 -> 88 -> 88 -> 88 -> 88 -> 88 -> 88 -> 88 -> 88 -> ...
+
+list.next = list
+```
+
+# Why not just change the data?
+The data might be extremely big whereas the references are small.
+Imagine copying a large file from one folder to another.
+
+If the computer stores the file as a reference to a location
+on your hard drive it can simply copy the reference and copy nearly instantly
+
+Copying all the data in a file would be a long lengthy process.
+
+# In Summary
+Array vs Linked List
+- linked lists use points
+
+Which is faster?
+- depends!
+- arrays read and write directly faster
+- linked lists manipulate their order faster

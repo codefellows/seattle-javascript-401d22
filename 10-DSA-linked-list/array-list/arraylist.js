@@ -7,6 +7,16 @@ class ArrayList {
     }
   }
 
+  // O(N)
+  prepend(value) {
+    this.insert(value, 0);
+  }
+
+  // O(1)
+  get(index) {
+    return this.data[index];
+  }
+
   append(val) {
     this.data[this.numElements] = val;
     this.numElements++;

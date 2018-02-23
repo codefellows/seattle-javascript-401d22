@@ -10,10 +10,25 @@ class LinkedList {
     this.root = null;
   }
 
+  // O(1)
   prepend(val) {
     let newNode = new ListNode(val);
     newNode.next = this.root;
     this.root = newNode;
+  }
+
+  // O(N)
+  get(index) {
+    let count = 0;
+    let current = this.root;
+    while (current != null) {
+      if (count === index) {
+        return current.data;
+      }
+      current = current.next;
+      count++;
+    }
+    return undefined;
   }
 
   removeFirst() {
@@ -26,6 +41,11 @@ class LinkedList {
       current = current.next;
     }
     current.next = null;
+  }
+
+  removeAtIndex(index) {
+    
+
   }
 
   toString() {

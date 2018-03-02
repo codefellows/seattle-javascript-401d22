@@ -3,20 +3,22 @@
 class Queue {
   constructor() {
     this.next = null;
-    this.length = 0;  
+    this.length = 0;
   }
 
-  enqueue(value) {
-    this[this.length] = value;
+  enqueue(val) {
+    this[this.length] = val;
     if (!this.next) this.next = 0;
     this.length++;
   }
 }
 
-var queue = new Queue();
+let queue = new Queue();
 
 queue.enqueue('first');
 queue.enqueue('second');
 queue.enqueue('third');
+queue.enqueue('fourth');
+queue.enqueue('fifth');
 
-console.log('new queue:', queue);
+console.log('my cool queue:', queue);

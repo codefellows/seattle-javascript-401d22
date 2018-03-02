@@ -23,6 +23,8 @@ LinkedList.prototype.prepend = function(val) {
 }
 
 LinkedList.prototype.append = function(val) {
+  if (!val) return;
+
   let node = new Node(val);
   let last = null;
 
@@ -42,7 +44,6 @@ LinkedList.prototype.append = function(val) {
   }
 }
 
-
 const ll = new LinkedList();
 
 ll.prepend(3);
@@ -54,4 +55,4 @@ ll.append(5);
 ll.append(6);
 ll.append(7);
 
-console.log('new linked list:', ll);
+console.log('linked list:', JSON.stringify(ll, null, 2));

@@ -41,19 +41,3 @@ Because data can only flow from parents to children, if more than one component 
 
 ### ES6 modules
 ES6 now supports its own ability to define JS modules. ES6 Modules are like commonJS modules, except they are automatically strict-mode code, even if you don't write `use strict`. ES6 now uses `export` and `import` to define and load modules.
-
-### Testing
-
-##### Jest
-Jest is a Javascript testing framework with out of the box react support. Jest methods include:
-* `describe` (same as mocha)
-* `beforeAll`, `afterAll` (same as mocha before and after)
-* `beforeEach` , `afterEach` (same as mocha)
-* `test` (same as mocha it)
-* `expect` (similar to expect js)
-
-##### Enzyme
-Enzyme is a utility designed to ease the testing of react components. It has a jQuery like api that helps interact with React components. It provides several methods for compiling/rendering components:
-* `shallow(<Component />)` - shallow rendering is useful to test a component without indirectly asserting behavior of child components
-* `render(<Component />)` - static rendering is used to render components to static html (text) and analyze the resulting HTML structure
-* `mount(<Component />)` - full rendering is ideal when your components interact with DOM APIs

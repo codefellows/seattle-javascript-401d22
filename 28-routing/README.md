@@ -1,4 +1,4 @@
-![cf](http://i.imgur.com/7v5ASc8.png) 28: Routing and Testing
+![cf](http://i.imgur.com/7v5ASc8.png) 28: Routing
 ===
 
 ## Learning Objectives

@@ -22,3 +22,6 @@ Each day of class will include a new directory created named after the class num
 
 # Assignments
 All readings, homework, labs, and quizzes will be published, in Canvas, the week before they are assigned. All coding assignment instructions and materials will be organized into git repositories and will be published the day of the assignment.  Most assignments are due the same evening.
+
+# Whiteboarding Signup Sheet
+[whiteboarding signup sheet](https://docs.google.com/spreadsheets/d/14EGmyNFIfpr2tlSk4c_qmXlVXh-StcLAk8n8vW3Dy1E/edit#gid=0)

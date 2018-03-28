@@ -9,13 +9,14 @@ export default (state=initialState, action) => {
     case 'CATEGORY_CREATE':
       return {...state, [payload.id] : []}
     case 'CATEGORY_DELETE':
-      // let newState = Object.keys(state).reduce((acc, key) => {
-      //   if (key !== payload.id) {
-      //     acc[key] = state[key];
-      //   }
-      // }, {})
-      // return newState;
-      return {...state, [payload.id] : undefined}
+      let newState = Object.keys(state).reduce((acc, key) => {
+        if (key !== payload.id) {
+          acc[key] = state[key];
+        }
+        return acc;
+      }, {})
+      return newState;
+      // return {...state, [payload.id] : undefined}
     case 'CARD_UPDATE':
       var categoryID = payload.categoryID;
       var categoryCards = state[categoryID];

@@ -5,7 +5,7 @@
 * Students will be able to use SCSS to create component based and modular CSS styles
 * Students will be able to *generally* conform to the SMACCS principles for creating base, layout, and theme containers for their application styles
 * Students will be able to create and use global SCSS variables for reusable styles
-* Students will be able to create meaningful component tests through the use of **jest** and **enzyme**
+* Students will be able to test the actions and reducers created as part of their redux workflow
 
 ## Readings
 * Read [sass getting started guide](http://sass-lang.com/guide)
@@ -40,12 +40,3 @@ component
   my-component-dir
     _my-component-dir.scss
 ```
-
-### Testing Components
-
-##### enzyme
-Enzyme is a utility that was designed to ease the testing of react components. It includes a jQuery like API that helps interacting with components and provides the following methods for compiling/rendering:
-
-* `shallow(<Component />)` - shallow rendering is useful to test a component without indirectly asserting behavior of child components
-* `render(<Component />)` - static rendering is used to render components to static html (text) and analyze the resulting HTML structure
-* `mount(<Component />)` - full rendering is ideal when your components interact with DOM APIs

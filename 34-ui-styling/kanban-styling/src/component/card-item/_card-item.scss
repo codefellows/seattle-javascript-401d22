@@ -1,0 +1,18 @@
+@import '../../style/lib/vars';
+
+.card-item {
+  > button {
+    background: none;
+    color: red;
+    font-size: $font-sm;
+    cursor: pointer;
+  }
+
+  p {
+    display: inline-block;
+    font-size: 3vw;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 1vw;
+  }
+}

@@ -1,0 +1,22 @@
+body {
+  font-family: $font;
+}
+
+button {
+  border: none;
+  background: $dark-grey;
+  color: $white;
+  border-radius: $radius;
+  font-size: $font-sm;
+  padding: $btn-pad;
+  text-transform: lowercase;
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+  padding: $input-pad;
+  border: solid 1px $black;
+  width: 50%;
+  margin-right: $gutter-sm;
+  margin-bottom: $gutter-sm;
+  font-size: $font-sm;
+}

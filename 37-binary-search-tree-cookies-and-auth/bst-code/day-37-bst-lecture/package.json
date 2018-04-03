@@ -1,0 +1,24 @@
+{
+  "name": "bst-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bst.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "watchAll": "jest --coverage --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JudyVue/bst.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JudyVue/bst/issues"
+  },
+  "homepage": "https://github.com/JudyVue/bst#readme",
+  "devDependencies": {
+    "jest": "^22.4.3"
+  }
+}

@@ -33,7 +33,7 @@ export default (state=initialState, action) => {
       }
     case 'CARD_CREATE':
       let {categoryID} = payload;
-      let categoryCards = state[categoryID];
+      categoryCards = state[categoryID];
       return {...state, [categoryID]: [...categoryCards, payload]};
     default:
       return state;

@@ -1,4 +1,4 @@
-![cf](http://i.imgur.com/7v5ASc8.png) 42: OAuth Continued
+![cf](http://i.imgur.com/7v5ASc8.png) 42: DS&A Review
 ===
 
 ## Learning Objectives

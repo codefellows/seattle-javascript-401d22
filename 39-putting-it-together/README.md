@@ -1,4 +1,4 @@
-![cf](http://i.imgur.com/7v5ASc8.png) 39: SVGS and Fonts
+![cf](http://i.imgur.com/7v5ASc8.png) 39: Putting it Together
 ===
 
 ## Learning Objectives

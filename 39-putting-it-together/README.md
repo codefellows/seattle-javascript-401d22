@@ -2,6 +2,8 @@
 ===
 
 ## Learning Objectives
+* Students will be able to build a fullstack application
+* Students will be able to code review a ReactJS application
 * Students will be able to load fonts with webpack
 * Students will be able to create icons using SVGs
 

@@ -1,0 +1,16 @@
+{
+  "name": "day-42",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hash-to-copy.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "watchAll": "jest --coverage --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^22.4.3"
+  }
+}
